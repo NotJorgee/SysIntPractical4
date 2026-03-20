@@ -1,5 +1,5 @@
 const MEALDB_API = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
-const BACKEND_API = '/food-explorer/backend/api.php'; 
+const BACKEND_API = 'backend/api.php';
 
 export async function loginUserDB(username, password) {
     const response = await fetch(`${BACKEND_API}?action=login`, {
