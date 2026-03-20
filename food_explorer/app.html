@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Food Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>🍽️ Food Explorer</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="tabs">
+        <button class="tab active" id="tab-search">Search Foods</button>
+        <button class="tab" id="tab-favorites">My Favorites</button>
+    </div>
+
+    <div class="container">
+        <div id="searchSection">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for a meal (e.g., Chicken)...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div id="searchResults" class="grid">
+                <p class="empty-message">Type a food name above to start searching!</p>
+            </div>
+        </div>
+
+        <div id="favoritesSection" class="hidden">
+            <div id="favoritesList" class="grid"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
