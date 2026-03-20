@@ -1,6 +1,7 @@
 export function switchTab(tabName) {
     document.getElementById('searchSection').classList.toggle('hidden', tabName !== 'search');
-    document.getElementById('favoritesSection').classList.toggle('hidden', tabName === 'favorites');
+    // FIX: Changed === to !== on the line below
+    document.getElementById('favoritesSection').classList.toggle('hidden', tabName !== 'favorites');
     document.getElementById('tab-search').classList.toggle('active', tabName === 'search');
     document.getElementById('tab-favorites').classList.toggle('active', tabName === 'favorites');
 }
